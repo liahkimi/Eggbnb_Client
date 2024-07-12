@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 // Redux 
 import { legacy_createStore as createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { devToolsEnhancer } from 'redux-devtools-extension';
+import { composeWithDevTools } from '@redux-devtools/extension';
 import rootReducer from './modules';
 
 // Redux Persist
@@ -15,7 +15,7 @@ import rootReducer from './modules';
 // import { store, persistor } from './modules/store';
 
 // Reducer 상태 전달
-const store = createStore(rootReducer, devToolsEnhancer())
+const store = createStore(rootReducer, composeWithDevTools())
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
