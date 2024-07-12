@@ -51,7 +51,7 @@ const CardListComponents = ({ cardList, setClickRoom, currentUser, isLogin }) =>
             updatedWish = [...currentWishList, _id];
         }
         
-        const response = await fetch("http://localhost:8000/user/",
+        const response = await fetch("https://port-0-eggbnb-server-jvpb2aln5lvkcq.sel5.cloudtype.app/user/",
             {
                 method: "PATCH",
                 headers: {

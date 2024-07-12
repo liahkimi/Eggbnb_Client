@@ -31,7 +31,7 @@ const BookingListContainer = () => {
         // bookingList 가져오기  
         const getBookingList = async () => {
             try {
-                const response = await fetch(`http://localhost:8000/booking/bookingList`, {
+                const response = await fetch(`https://port-0-eggbnb-server-jvpb2aln5lvkcq.sel5.cloudtype.app/booking/bookingList`, {
                     method: "POST", // 사용자정보 노출 안되기 위해서 GET대신 PUT사용
                     headers: {
                         'Content-Type': 'application/json; charset=utf-8'

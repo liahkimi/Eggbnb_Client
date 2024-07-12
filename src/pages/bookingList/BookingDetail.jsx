@@ -98,7 +98,7 @@ const BookingDetail = ({item, isActive, index,setItemData, itemData, update, set
     // cancleBooking함수를 통해 예약취소버튼 클릭시 예약내역에서 사라지는 기능 구현
     const handleConfirmRemove =  async() => {
         
-        try{ const response = await fetch(`http://localhost:8000/booking/updateBookingList`,
+        try{ const response = await fetch(`https://port-0-eggbnb-server-jvpb2aln5lvkcq.sel5.cloudtype.app/booking/updateBookingList`,
                 { 
                     method : "POST",
                     headers : {

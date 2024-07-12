@@ -79,7 +79,7 @@ const SignUpContainer = () => {
     const checkEmailInfo = async (props) => {
         console.log(props)
         try{
-            const response = await fetch("http://localhost:8000/user/checkEmail", {
+            const response = await fetch(`https://port-0-eggbnb-server-jvpb2aln5lvkcq.sel5.cloudtype.app/user/checkEmail`, {
                 method : "POST",
                 body : JSON.stringify(props),
                 headers : {
@@ -101,7 +101,7 @@ const SignUpContainer = () => {
     const checkUserIdInfo = async (props) => {
         console.log(props)
         try{
-            const response = await fetch("http://localhost:8000/user/checkUserId", {
+            const response = await fetch(`https://port-0-eggbnb-server-jvpb2aln5lvkcq.sel5.cloudtype.app/user/checkUserId`, {
                 method : "POST",
                 body : JSON.stringify(props),
                 headers : {
@@ -124,7 +124,7 @@ const SignUpContainer = () => {
                 console.log(data)
 
                 //회원가입 로직
-                await fetch('http://localhost:8000/user/signUp', {
+                await fetch(`https://port-0-eggbnb-server-jvpb2aln5lvkcq.sel5.cloudtype.app/user/signUp`, {
                     method : 'POST',
                     headers : {
                         'Content-Type' : 'application/json'

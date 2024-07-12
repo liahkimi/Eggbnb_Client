@@ -31,7 +31,7 @@ const WishItemContents = ({rooms, userId, setUpdate, update}) => {
     // 서버에 요청하여 위시리스트에서 항목을 삭제
     const handleConfirmRemove = async( ) => {
                 try{
-                    const response = await fetch(`http://localhost:8000/room/updateWishList`,
+                    const response = await fetch(`https://port-0-eggbnb-server-jvpb2aln5lvkcq.sel5.cloudtype.app/room/updateWishList`,
 
                         { 
                             method : "POST",

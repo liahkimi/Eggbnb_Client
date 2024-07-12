@@ -19,7 +19,7 @@ const LeftHostBox = ({profileImg, userId, commentData, starAvr, setpopup1State})
                 <div className="hostImg">
                     <img src={profileImg
                         ?
-                        `http://localhost:8000/${profileImg}`
+                        `https://port-0-eggbnb-server-jvpb2aln5lvkcq.sel5.cloudtype.app/${profileImg}`
                         :`${publicUrl}/images/pages/detail/emptyUser.jpg`
                     } alt="호스트썸네일" />
                 </div>

@@ -24,7 +24,7 @@ const DetailCommentBox = ({commentData, commentUsers, setpopup1State}) => {
                                 <div className="commentImg">
                                     <img src={
                                         commentUsers.filter((user)=>user._id === comment.userId)[0].profileImg
-                                        ?`http://localhost:8000/${commentUsers.filter((user)=>user._id === comment.userId)[0].profileImg}`
+                                        ?`https://port-0-eggbnb-server-jvpb2aln5lvkcq.sel5.cloudtype.app/${commentUsers.filter((user)=>user._id === comment.userId)[0].profileImg}`
                                         :`${publicUrl}/images/pages/detail/emptyUser.jpg`
                                     } alt="유저 썸네일" />
                                 </div>

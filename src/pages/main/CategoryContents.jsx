@@ -36,7 +36,7 @@ const CategoryContents = ({roomList, searchParams}) => {
             return
         }
         const refreshWishList = async () => {
-            await fetch("http://localhost:8000/user/", {
+            await fetch('https://port-0-eggbnb-server-jvpb2aln5lvkcq.sel5.cloudtype.app/user/', {
                 method : "PATCH",
                 headers : {
                     "Content-Type" : "application/json; charset=utf-8"

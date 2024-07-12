@@ -71,7 +71,7 @@ const PopupBox1 = ({title,commentData,commentUsers,popup1State,setpopup1State}) 
                                         <div className="commentTL">
                                             <div className="userProfileImg">
                                                 <img src={commentUsers.filter((user)=>user._id===comment.userId)[0].profileImg
-                                                    ?`http://localhost:8000/${commentUsers.filter((user)=>user._id===comment.userId)[0].profileImg}`
+                                                    ?`https://port-0-eggbnb-server-jvpb2aln5lvkcq.sel5.cloudtype.app/${commentUsers.filter((user)=>user._id===comment.userId)[0].profileImg}`
                                                     :`${publicUrl}/images/pages/detail/emptyUser.jpg`
                                                 } alt={`userProfileImg${i+1}`} />
                                             </div>

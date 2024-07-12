@@ -43,7 +43,8 @@ const SignInContainer = () => {
                 // console.log(data)
 
                 // 로그인 로직
-                await fetch('http://localhost:8000/user/passportLogin', {
+                console.log(process.env.REACT_APP_SERVER_URL);
+                await fetch('https://port-0-eggbnb-server-jvpb2aln5lvkcq.sel5.cloudtype.app/user/passportLogin', {
                     method : 'POST',
                     headers : {
                         'Content-Type' : 'application/json; charset=utf-8',

@@ -128,7 +128,7 @@ const ModalFilterBox = ({ searchParams, setSearchParams, isFilterActivate, handl
 
             // 숙소 요청
             const getRoomList = async () => {
-                const response = await fetch(`http://localhost:8000/room/search`, 
+                const response = await fetch(`https://port-0-eggbnb-server-jvpb2aln5lvkcq.sel5.cloudtype.app/room/search`, 
                     {
                         method: "POST",
                         headers: {

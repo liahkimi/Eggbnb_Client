@@ -27,7 +27,7 @@ const Success = () => {
 
         // bookingList fetch() 보내기
         async function bookingData () {
-            const response = await fetch(`http://localhost:8000/booking/bookingsuccess`, {
+            const response = await fetch(`https://port-0-eggbnb-server-jvpb2aln5lvkcq.sel5.cloudtype.app/booking/bookingsuccess`, {
                 method: 'POST',
                 body: JSON.stringify({
                     roomId: roomId,

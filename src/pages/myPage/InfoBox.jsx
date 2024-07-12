@@ -140,7 +140,7 @@ const InfoBox = ({info}) => {
     const updateUserInfo = async () => {
         console.log(modify)
         try{
-            const response = await fetch("http://localhost:8000/user/myPage", {
+            const response = await fetch("https://port-0-eggbnb-server-jvpb2aln5lvkcq.sel5.cloudtype.app/user/myPage", {
                 method : "PATCH",
                 body : JSON.stringify(modify),
                 headers : {
@@ -161,7 +161,7 @@ const InfoBox = ({info}) => {
     const checkInfo = async (props) => {
         console.log(props)
         try{
-            const response = await fetch("http://localhost:8000/user/myPage", {
+            const response = await fetch("https://port-0-eggbnb-server-jvpb2aln5lvkcq.sel5.cloudtype.app/user/myPage", {
                 method : "POST",
                 body : JSON.stringify(props),
                 headers : {
