@@ -20,24 +20,25 @@ const PaginationComponents = ({ maxPage }) => {
     const currentPage = +useParams().currentPage;
 
     const navigate = useNavigate();
+    const [ searchParams, setSearchParams ] = useSearchParams();
 
 
     // 페이지 클릭 함수
     const pagenationClickEvent = (e) => {
-        navigate(`${+e.currentTarget.innerText}/`);
+        navigate(`${+e.currentTarget.innerText}/?${searchParams.toString()}`);
     };
 
     // 이전 페이지 클릭 함수
     const prevClickEvent = () => {
         if (currentPage > firstPage) {
-            navigate(`${+currentPage - 1}/`);
+            navigate(`${+currentPage - 1}/?${searchParams.toString()}`);
         }
     };
 
     // 다음 페이지 클릭 함수
     const nextClickEvent = () => {
         if (currentPage < lastPage) {
-            navigate(`${+currentPage + 1}/`);
+            navigate(`${+currentPage + 1}/?${searchParams.toString()}`);
         }
     };
 
