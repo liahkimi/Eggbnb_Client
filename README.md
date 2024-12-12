@@ -47,7 +47,7 @@
 https://github.com/user-attachments/assets/4ea00837-79ca-4f4b-b726-fd7412457dfe
 
 
-### 여행 페이지 [상세보기 - WIKI 이동]()
+### 여행 페이지
 
-### 위시리스트 페이지 [상세보기 - WIKI 이동]()
+### 위시리스트 페이지
 
